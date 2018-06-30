@@ -8,6 +8,7 @@ const app = express()
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 
+app.use(cors())
 
 app.use((err, req, res, next) => {
   console.error(err)
