@@ -1,5 +1,5 @@
 const express = require('express')
-const contr = require('../controllers/blogs')
+const contr = require('../controllers/blog')
 const router = express.Router()
 
 router.get('/', contr.getAll)

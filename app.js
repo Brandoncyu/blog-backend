@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const blogRoutes = require('./src/routes/blog')
-app.use('/blog', blogRoutes)
+app.use('/posts', blogRoutes)
 
 app.use((err, req, res, next) => {
   console.error(err)

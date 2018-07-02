@@ -34,7 +34,7 @@ function create(input){
 }
 
 function update(input, id){
-  let data = db.find(element => element.id === id)
+  let data = db.find(element => element.id == id)
   let index = db.indexOf(data)
 
   let title = input.title
@@ -48,7 +48,7 @@ function update(input, id){
 }
 
 function remove(id){
-  let data = db.find(element => element.id === id)
+  let data = db.find(element => element.id == id)
   let index = db.indexOf(data)
   db.splice(index, 1)
   return data
